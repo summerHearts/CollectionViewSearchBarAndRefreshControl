@@ -11,7 +11,10 @@
 #import "HorizaontalScrollListCell.h"
 #import "MJRefresh.h"
 #import "codeObfuscation.h"
+#import <MagicalRecord/MagicalRecord.h>
+#import "Entity.h"
 
+#define MR_SHORTHAND
 static NSString * const CollectionViewCellIdentifier = @"CollectionViewCellIdentifier";
 
 static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScrollListCellIdentifier";
@@ -45,6 +48,46 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     [self.collectionView registerNib:[UINib nibWithNibName:@"HorizaontalScrollListCell" bundle:nil] forCellWithReuseIdentifier:@"HorizaontalScrollListCellIdentifier"];
     [self.collectionView setBackgroundColor: [UIColor whiteColor]];
 
+    
+    
+    [MagicalRecord setupCoreDataStackWithStoreNamed:[NSString stringWithFormat:@"%@.sqlite", @"Entery"]];
+
+ 
+
+    
+    //查找所有
+    //查找并按name升序排序
+    NSArray *ary2 = [Entity MR_findAllSortedBy:@"name" ascending:YES]; //查找type为2的数据
+    NSArray *ary3 = [Entity MR_findByAttribute:@"type" withValue:@"2"];
+    //查找第一条数据
+    Entity *entyty = [Entity MR_findFirst];
+    
+    for (Entity *enty in ary2) {
+        NSLog(@"%@ ,%@ ,%@",enty.name,enty.type,enty.tag);
+    }
+    NSLog(@"---------------------------------------------------------------------");
+
+    for (Entity *enty in ary3) {
+        NSLog(@"%@ ,%@ ,%@",enty.name,enty.type,enty.tag);
+    }
+   
+
+    NSLog(@"---------------------------------------------------------------------");
+    NSArray *ary = [Entity MR_findAll];
+    
+    //修改
+    Entity *entity = [ary lastObject];
+    entity.name = @"mike";
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+    NSLog(@"%@ ,%@ ,%@",entity.name,entyty.type,entyty.tag);
+    
+    //删除
+    NSArray *arry = [Entity MR_findAll];
+    
+    Entity *ensy = [arry lastObject];
+    [ensy MR_deleteEntity];
+    [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+
     //上拉刷新和下拉刷新
     [self refreshAction];
 }
@@ -72,6 +115,13 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
 - (void)refreshAction{
     // 下拉刷新
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        //添加
+        Entity *enty = [Entity MR_createEntity];
+        
+        enty.name = @"Blank_佐毅";
+        enty.type = @"2";
+        enty.tag  = @"22";
+        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
         
         [self.collectionView.mj_header endRefreshing];
     }];
@@ -125,7 +175,6 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     }else{
         return CGSizeMake([UIScreen mainScreen].bounds.size.width,120);
     }
-    
 }
 
 
