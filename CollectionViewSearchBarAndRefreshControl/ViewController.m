@@ -101,7 +101,6 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
 - (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     
     if (searchText.length>0) {
-        // search and reload data source
         self.searchBarActive = YES;
         [self filterContentForSearchText:searchText
                                    scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
