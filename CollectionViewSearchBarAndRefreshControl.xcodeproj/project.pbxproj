@@ -17,6 +17,7 @@
 		23344C061C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344C051C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControlUITests.m */; };
 		23344C181C5F0ED100724A4C /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344C171C5F0ED100724A4C /* CollectionViewCell.m */; };
 		23344C1C1C5F2A6000724A4C /* cellImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 23344C1B1C5F2A6000724A4C /* cellImage.png */; };
+		23344C1F1C5F383F00724A4C /* 24.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23344C1E1C5F383F00724A4C /* 24.gif */; };
 		29032775BE5D863BDAC5BB0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9444F48926A09625C6CD3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,7 @@
 		23344C161C5F0ED100724A4C /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		23344C171C5F0ED100724A4C /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		23344C1B1C5F2A6000724A4C /* cellImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellImage.png; sourceTree = "<group>"; };
+		23344C1E1C5F383F00724A4C /* 24.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 24.gif; sourceTree = "<group>"; };
 		61B52BC7860FD062F7EBF88A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		61BD6CFB7951484362FE64D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA9444F48926A09625C6CD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 		23344BDF1C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				23344C1D1C5F372800724A4C /* ScreenShot */,
 				23344C131C5F0E7E00724A4C /* Controllers */,
 				23344C141C5F0E7E00724A4C /* Models */,
 				23344C151C5F0E7E00724A4C /* Views */,
@@ -177,6 +180,14 @@
 				23344C171C5F0ED100724A4C /* CollectionViewCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		23344C1D1C5F372800724A4C /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				23344C1E1C5F383F00724A4C /* 24.gif */,
+			);
+			path = ScreenShot;
 			sourceTree = "<group>";
 		};
 		7B9B59906AE2F2C5DDEA3D3E /* Frameworks */ = {
@@ -302,6 +313,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23344C1F1C5F383F00724A4C /* 24.gif in Resources */,
 				23344BF01C5F0DBA00724A4C /* LaunchScreen.storyboard in Resources */,
 				23344C1C1C5F2A6000724A4C /* cellImage.png in Resources */,
 				23344BED1C5F0DBA00724A4C /* Assets.xcassets in Resources */,
