@@ -10,7 +10,9 @@
 #import "CollectionViewCell.h"
 #import "HorizaontalScrollListCell.h"
 #import "MJRefresh.h"
-static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
+#import "codeObfuscation.h"
+
+static NSString * const CollectionViewCellIdentifier = @"CollectionViewCellIdentifier";
 
 static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScrollListCellIdentifier";
 @interface ViewController ()<UISearchBarDelegate>
@@ -92,7 +94,7 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     
     UICollectionViewCell *collectionCell = nil;
     if (indexPath.section == 0) {
-        CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+        CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:CollectionViewCellIdentifier forIndexPath:indexPath];
         cell.backgroundColor = [UIColor whiteColor];
         collectionCell =  cell;
     }else{
