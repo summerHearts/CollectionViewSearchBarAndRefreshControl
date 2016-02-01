@@ -13,7 +13,7 @@ typedef void(^HorizaontalScrollListCellClickBlock)(NSIndexPath *indexPath);
 @interface HorizaontalScrollListCell : UICollectionViewCell
 
 
-@property (nonatomic, strong) NSDictionary *imageDict;
+@property (nonatomic, strong) NSArray *imageArray;
 @property (nonatomic, copy) HorizaontalScrollListCellClickBlock clickBlock;
 
 @end

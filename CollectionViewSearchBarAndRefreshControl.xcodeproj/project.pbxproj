@@ -23,6 +23,7 @@
 		23344C271C5F3EF100724A4C /* HorizaontalScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344C261C5F3EF100724A4C /* HorizaontalScrollView.m */; };
 		23344C2B1C5F3F6700724A4C /* HorizaontalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344C291C5F3F6700724A4C /* HorizaontalViewCell.m */; };
 		23344C2C1C5F3F6700724A4C /* HorizaontalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23344C2A1C5F3F6700724A4C /* HorizaontalViewCell.xib */; };
+		23344C361C5F49F700724A4C /* 25.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23344C351C5F49F700724A4C /* 25.gif */; };
 		29032775BE5D863BDAC5BB0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9444F48926A09625C6CD3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +73,7 @@
 		23344C281C5F3F6700724A4C /* HorizaontalViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorizaontalViewCell.h; sourceTree = "<group>"; };
 		23344C291C5F3F6700724A4C /* HorizaontalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizaontalViewCell.m; sourceTree = "<group>"; };
 		23344C2A1C5F3F6700724A4C /* HorizaontalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizaontalViewCell.xib; sourceTree = "<group>"; };
+		23344C351C5F49F700724A4C /* 25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 25.gif; sourceTree = "<group>"; };
 		61B52BC7860FD062F7EBF88A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		61BD6CFB7951484362FE64D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA9444F48926A09625C6CD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				23344C1E1C5F383F00724A4C /* 24.gif */,
+				23344C351C5F49F700724A4C /* 25.gif */,
 			);
 			path = ScreenShot;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23344C2C1C5F3F6700724A4C /* HorizaontalViewCell.xib in Resources */,
+				23344C361C5F49F700724A4C /* 25.gif in Resources */,
 				23344C1F1C5F383F00724A4C /* 24.gif in Resources */,
 				23344BF01C5F0DBA00724A4C /* LaunchScreen.storyboard in Resources */,
 				23344C241C5F3E6800724A4C /* HorizaontalScrollListCell.xib in Resources */,

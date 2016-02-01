@@ -72,7 +72,7 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     }else{
         HorizaontalScrollListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HorizaontalScrollListCellIdentifier forIndexPath:indexPath];
         cell.backgroundColor = [UIColor whiteColor];
-        [cell setImageDict:@{@"key":@"2"}];
+        [cell setImageArray:@[@"1"]];
         collectionCell =  cell;
     }
     return collectionCell;

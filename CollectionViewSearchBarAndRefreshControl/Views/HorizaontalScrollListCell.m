@@ -36,7 +36,7 @@
 
 }
 
-- (void)setImageDict:(NSDictionary *)imageDict{
+- (void)setImageArray:(NSArray *)imageArray{
     self.scrollingView.imageArray = @[@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1",@"1"];
 }
 
