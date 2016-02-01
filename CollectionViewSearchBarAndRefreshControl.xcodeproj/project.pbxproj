@@ -13,6 +13,10 @@
 		2319407D1C5F5C2100D3CECA /* Entery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2319407B1C5F5C2100D3CECA /* Entery.xcdatamodeld */; };
 		231940931C5F601900D3CECA /* Entity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 231940901C5F601900D3CECA /* Entity+CoreDataProperties.m */; };
 		231940941C5F601900D3CECA /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 231940921C5F601900D3CECA /* Entity.m */; };
+		2319409F1C5F68CB00D3CECA /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 231940981C5F68CB00D3CECA /* GCDGroup.m */; };
+		231940A01C5F68CB00D3CECA /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319409A1C5F68CB00D3CECA /* GCDQueue.m */; };
+		231940A11C5F68CB00D3CECA /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319409C1C5F68CB00D3CECA /* GCDSemaphore.m */; };
+		231940A21C5F68CB00D3CECA /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319409E1C5F68CB00D3CECA /* GCDTimer.m */; };
 		23344BE21C5F0DBA00724A4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344BE11C5F0DBA00724A4C /* main.m */; };
 		23344BE51C5F0DBA00724A4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344BE41C5F0DBA00724A4C /* AppDelegate.m */; };
 		23344BE81C5F0DBA00724A4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344BE71C5F0DBA00724A4C /* ViewController.m */; };
@@ -60,6 +64,15 @@
 		231940901C5F601900D3CECA /* Entity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entity+CoreDataProperties.m"; sourceTree = "<group>"; };
 		231940911C5F601900D3CECA /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		231940921C5F601900D3CECA /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
+		231940961C5F68CB00D3CECA /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		231940971C5F68CB00D3CECA /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		231940981C5F68CB00D3CECA /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		231940991C5F68CB00D3CECA /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		2319409A1C5F68CB00D3CECA /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		2319409B1C5F68CB00D3CECA /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		2319409C1C5F68CB00D3CECA /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		2319409D1C5F68CB00D3CECA /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		2319409E1C5F68CB00D3CECA /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		23344BDD1C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewSearchBarAndRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23344BE11C5F0DBA00724A4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23344BE31C5F0DBA00724A4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +133,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		231940951C5F68BE00D3CECA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				231940961C5F68CB00D3CECA /* GCD.h */,
+				231940971C5F68CB00D3CECA /* GCDGroup.h */,
+				231940981C5F68CB00D3CECA /* GCDGroup.m */,
+				231940991C5F68CB00D3CECA /* GCDQueue.h */,
+				2319409A1C5F68CB00D3CECA /* GCDQueue.m */,
+				2319409B1C5F68CB00D3CECA /* GCDSemaphore.h */,
+				2319409C1C5F68CB00D3CECA /* GCDSemaphore.m */,
+				2319409D1C5F68CB00D3CECA /* GCDTimer.h */,
+				2319409E1C5F68CB00D3CECA /* GCDTimer.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		23344BD41C5F0DBA00724A4C = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +174,7 @@
 		23344BDF1C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				231940951C5F68BE00D3CECA /* Library */,
 				231940741C5F540400D3CECA /* confuse.sh */,
 				231940761C5F546C00D3CECA /* func.list */,
 				231940721C5F51F200D3CECA /* codeObfuscation.h */,
@@ -459,12 +489,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				231940931C5F601900D3CECA /* Entity+CoreDataProperties.m in Sources */,
+				231940A11C5F68CB00D3CECA /* GCDSemaphore.m in Sources */,
 				23344BE81C5F0DBA00724A4C /* ViewController.m in Sources */,
 				23344C271C5F3EF100724A4C /* HorizaontalScrollView.m in Sources */,
+				231940A21C5F68CB00D3CECA /* GCDTimer.m in Sources */,
 				2319407D1C5F5C2100D3CECA /* Entery.xcdatamodeld in Sources */,
+				231940A01C5F68CB00D3CECA /* GCDQueue.m in Sources */,
 				23344BE51C5F0DBA00724A4C /* AppDelegate.m in Sources */,
 				23344C2B1C5F3F6700724A4C /* HorizaontalViewCell.m in Sources */,
 				23344C181C5F0ED100724A4C /* CollectionViewCell.m in Sources */,
+				2319409F1C5F68CB00D3CECA /* GCDGroup.m in Sources */,
 				23344BE21C5F0DBA00724A4C /* main.m in Sources */,
 				23344C231C5F3E6800724A4C /* HorizaontalScrollListCell.m in Sources */,
 				231940941C5F601900D3CECA /* Entity.m in Sources */,

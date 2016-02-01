@@ -13,7 +13,7 @@
 #import "codeObfuscation.h"
 #import <MagicalRecord/MagicalRecord.h>
 #import "Entity.h"
-
+#import "GCD.h"
 #define MR_SHORTHAND
 static NSString * const CollectionViewCellIdentifier = @"CollectionViewCellIdentifier";
 
@@ -52,10 +52,6 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     
     [MagicalRecord setupCoreDataStackWithStoreNamed:[NSString stringWithFormat:@"%@.sqlite", @"Entery"]];
 
- 
-
-    
-    //查找所有
     //查找并按name升序排序
     NSArray *ary2 = [Entity MR_findAllSortedBy:@"name" ascending:YES]; //查找type为2的数据
     NSArray *ary3 = [Entity MR_findByAttribute:@"type" withValue:@"2"];
@@ -116,14 +112,22 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     // 下拉刷新
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         //添加
-        Entity *enty = [Entity MR_createEntity];
         
-        enty.name = @"Blank_佐毅";
-        enty.type = @"2";
-        enty.tag  = @"22";
-        [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
-        
-        [self.collectionView.mj_header endRefreshing];
+        [GCDQueue executeInGlobalQueue:^{
+            
+            // 子线程执行下载操作
+            Entity *enty = [Entity MR_createEntity];
+            enty.name = @"Blank_佐毅";
+            enty.type = @"2";
+            enty.tag  = @"22";
+            [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
+            
+            [GCDQueue executeInMainQueue:^{
+                [self.collectionView.mj_header endRefreshing];
+            }];
+            
+            
+        }];
     }];
 }
 
