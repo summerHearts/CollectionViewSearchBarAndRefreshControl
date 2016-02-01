@@ -8,10 +8,11 @@
 
 #import "ViewController.h"
 #import "CollectionViewCell.h"
-
+#import "HorizaontalScrollListCell.h"
 #import "MJRefresh.h"
 static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
 
+static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScrollListCellIdentifier";
 @interface ViewController ()<UISearchBarDelegate>
 
 @property (nonatomic,strong) NSArray        *dataSource;
@@ -37,7 +38,9 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
     [self.collectionView setBackgroundColor: [UIColor whiteColor]];
     [self.view setBackgroundColor:[UIColor whiteColor]];
     self.dataSourceForSearchResult = [NSArray new];
-    self.dataSource =@[@"1",@"2",@"2",@"3",@"4",@"4",@"5",@"6",@"7",@"7", @"6", @"6", @"6", @"7", @"7"];
+    self.dataSource =@[@"1",@"2"];
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"HorizaontalScrollListCell" bundle:nil] forCellWithReuseIdentifier:@"HorizaontalScrollListCellIdentifier"];
     
     // 下拉刷新
     self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -54,10 +57,9 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
     [self prepareUI];
 }
 
-
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 1;
+    return  self.dataSource.count;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     if (self.searchBarActive) {
@@ -66,29 +68,47 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
     return self.dataSource.count;
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    if (self.searchBarActive) {
-        cell.cellImageView = self.dataSourceForSearchResult[indexPath.row];
+    UICollectionViewCell *collectionCell = nil;
+    if (indexPath.section == 0) {
+        CollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+        if (self.searchBarActive) {
+            cell.cellImageView = self.dataSourceForSearchResult[indexPath.row];
+        }else{
+            cell.cellImageView = self.dataSource[indexPath.row];
+        }
+        cell.backgroundColor = [UIColor whiteColor];
+        collectionCell =  cell;
     }else{
-        cell.cellImageView = self.dataSource[indexPath.row];
+        HorizaontalScrollListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HorizaontalScrollListCellIdentifier forIndexPath:indexPath];
+        cell.backgroundColor = [UIColor whiteColor];
+        [cell setImageDict:@{@"key":@"2"}];
+        collectionCell =  cell;
     }
-    cell.backgroundColor = [UIColor whiteColor];
-    return cell;
+    return collectionCell;
 }
 
 
-#pragma mark -  <UICollectionViewDelegateFlowLayout>
+#pragma mark -  <UICollectrionViewDelegateFlowLayout>
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout*)collectionViewLayout
         insetForSectionAtIndex:(NSInteger)section{
-    return UIEdgeInsetsMake(self.searchBar.frame.size.height, 0, 0, 0);
+    if (section == 0) {
+        return UIEdgeInsetsMake(self.searchBar.frame.size.height, 0, 0, 0);
+    }else{
+        return UIEdgeInsetsZero;
+    }
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView
                   layout:(UICollectionViewLayout*)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    CGFloat cellLeg = (self.collectionView.frame.size.width/2) - 5;
-    return CGSizeMake(cellLeg,cellLeg);;
+    if (indexPath.section == 0) {
+   
+        return CGSizeMake(80,80);
+    }else{
+        return CGSizeMake([UIScreen mainScreen].bounds.size.width,120);
+    }
+    
 }
 
 
