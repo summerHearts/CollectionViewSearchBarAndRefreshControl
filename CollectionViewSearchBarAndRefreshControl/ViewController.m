@@ -14,6 +14,8 @@
 #import <MagicalRecord/MagicalRecord.h>
 #import "Entity.h"
 #import "GCD.h"
+#import "HorizaontalScrollView.h"
+#import "CardCollectionController.h"
 #define MR_SHORTHAND
 static NSString * const CollectionViewCellIdentifier = @"CollectionViewCellIdentifier";
 
@@ -155,12 +157,20 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
         HorizaontalScrollListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HorizaontalScrollListCellIdentifier forIndexPath:indexPath];
         cell.backgroundColor = [UIColor whiteColor];
         [cell setImageArray:@[@"1"]];
+        cell.clickBlock = ^(NSIndexPath *indexPath){
+            CardCollectionController *cardController = [[CardCollectionController alloc]init];
+            [self.navigationController pushViewController:cardController animated:YES];
+        };
         collectionCell =  cell;
     }
     return collectionCell;
 }
 
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    CardCollectionController *cardController = [[CardCollectionController alloc]init];
+    [self.navigationController pushViewController:cardController animated:YES];
+}
 #pragma mark -  <UICollectrionViewDelegateFlowLayout>
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView
                         layout:(UICollectionViewLayout*)collectionViewLayout
@@ -210,7 +220,6 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     [self.searchBar resignFirstResponder];
     self.searchBar.text  = @"";
 }
-
 
 #pragma mark - scrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
