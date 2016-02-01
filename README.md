@@ -4,3 +4,7 @@
 
 
 添加上拉刷新和搜索功能，用户可以上下互动视图，也可以左右滚动视图功能
+
+添加资源混淆，提高App安全性。
+
+![image](https://github.com/summerHearts/CollectionViewSearchBarAndRefreshControl/blob/master/CollectionViewSearchBarAndRefreshControl/ScreenShot/codeConfuse.png)
