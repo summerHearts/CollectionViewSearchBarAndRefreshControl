@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CollectionViewCell.h"
 
+#import "MJRefresh.h"
 static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
 
 @interface ViewController ()<UISearchBarDelegate>
@@ -17,7 +18,6 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
 @property (nonatomic,strong) NSArray        *dataSourceForSearchResult;
 
 @property (nonatomic,strong) UISearchBar        *searchBar;
-@property (nonatomic,strong) UIRefreshControl   *refreshControl;
 
 @property (nonatomic)        BOOL           searchBarActive;
 @property (nonatomic)        float          searchBarBoundsY;
@@ -39,23 +39,19 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
     self.dataSourceForSearchResult = [NSArray new];
     self.dataSource =@[@"1",@"2",@"2",@"3",@"4",@"4",@"5",@"6",@"7",@"7", @"6", @"6", @"6", @"7", @"7"];
     
+    // 下拉刷新
+    self.collectionView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        
+        [self.collectionView.mj_header endRefreshing];
+    }];
+    
+    
 }
 
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self prepareUI];
-}
-
-#pragma mark - actions
--(void)refreashControlAction{
-    [self cancelSearching];
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        
-        [self.collectionView reloadData];
-        [self.refreshControl endRefreshing];
-    });
 }
 
 
@@ -143,7 +139,6 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
 #pragma mark - prepareVC
 -(void)prepareUI{
     [self addSearchBar];
-    [self addRefreshControl];
 }
 -(void)addSearchBar{
     if (!self.searchBar) {
@@ -165,23 +160,6 @@ static NSString * const reuseIdentifier = @"CollectionViewCellIdentifier";
     }
 }
 
--(void)addRefreshControl{
-    if (!self.refreshControl) {
-        self.refreshControl                  = [UIRefreshControl new];
-        self.refreshControl.tintColor        = [UIColor orangeColor];
-        [self.refreshControl addTarget:self
-                                action:@selector(refreashControlAction)
-                      forControlEvents:UIControlEventValueChanged];
-    }
-    if (![self.refreshControl isDescendantOfView:self.collectionView]) {
-        [self.collectionView addSubview:self.refreshControl];
-    }
-}
--(void)startRefreshControl{
-    if (!self.refreshControl.refreshing) {
-        [self.refreshControl beginRefreshing];
-    }
-}
 
 #pragma mark - observer
 - (void)addObservers{
