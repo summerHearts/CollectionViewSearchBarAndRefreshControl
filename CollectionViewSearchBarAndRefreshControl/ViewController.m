@@ -16,7 +16,6 @@
 #import "GCD.h"
 #import "HorizaontalScrollView.h"
 #import "CardCollectionController.h"
-#define MR_SHORTHAND
 static NSString * const CollectionViewCellIdentifier = @"CollectionViewCellIdentifier";
 
 static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScrollListCellIdentifier";
@@ -88,8 +87,13 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
 
     //上拉刷新和下拉刷新
     [self refreshAction];
+    
+    [self nameAction];
 }
 
+- (void)nameAction{
+    NSLog(@"asfgagdfjklgl");
+}
 
 - (void)initSearchBar{
         self.searchBarBoundsY = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
@@ -104,7 +108,10 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
         [textField setTextColor:[UIColor orangeColor]];
     
         [self.view addSubview:self.searchBar];
+    
 }
+
+
 
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];

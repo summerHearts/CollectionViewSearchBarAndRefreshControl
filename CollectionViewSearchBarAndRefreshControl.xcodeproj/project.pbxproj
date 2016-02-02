@@ -34,12 +34,12 @@
 		23344C2B1C5F3F6700724A4C /* HorizaontalViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344C291C5F3F6700724A4C /* HorizaontalViewCell.m */; };
 		23344C2C1C5F3F6700724A4C /* HorizaontalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23344C2A1C5F3F6700724A4C /* HorizaontalViewCell.xib */; };
 		23344C361C5F49F700724A4C /* 25.gif in Resources */ = {isa = PBXBuildFile; fileRef = 23344C351C5F49F700724A4C /* 25.gif */; };
+		2340EB831C6042A1003E8A81 /* bg1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2340EB801C6042A1003E8A81 /* bg1.jpg */; };
+		2340EB841C6042A1003E8A81 /* bg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2340EB811C6042A1003E8A81 /* bg2.jpg */; };
+		2340EB851C6042A1003E8A81 /* bg0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2340EB821C6042A1003E8A81 /* bg0.jpg */; };
 		23D9CDDB1C5F9EFB00A53FB8 /* CardCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CDDA1C5F9EFB00A53FB8 /* CardCollectionController.m */; };
 		23D9CDE81C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CDE51C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m */; };
 		23D9CDE91C5FA3FF00A53FB8 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CDE71C5FA3FF00A53FB8 /* CardCollectionViewCell.m */; };
-		23D9CDFF1C5FADB700A53FB8 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D9CDFC1C5FADB700A53FB8 /* 1.jpg */; };
-		23D9CE001C5FADB700A53FB8 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D9CDFD1C5FADB700A53FB8 /* 2.jpg */; };
-		23D9CE011C5FADB700A53FB8 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 23D9CDFE1C5FADB700A53FB8 /* 3.jpg */; };
 		29032775BE5D863BDAC5BB0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9444F48926A09625C6CD3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -108,15 +108,15 @@
 		23344C291C5F3F6700724A4C /* HorizaontalViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorizaontalViewCell.m; sourceTree = "<group>"; };
 		23344C2A1C5F3F6700724A4C /* HorizaontalViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HorizaontalViewCell.xib; sourceTree = "<group>"; };
 		23344C351C5F49F700724A4C /* 25.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 25.gif; sourceTree = "<group>"; };
+		2340EB801C6042A1003E8A81 /* bg1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg1.jpg; sourceTree = "<group>"; };
+		2340EB811C6042A1003E8A81 /* bg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg2.jpg; sourceTree = "<group>"; };
+		2340EB821C6042A1003E8A81 /* bg0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg0.jpg; sourceTree = "<group>"; };
 		23D9CDD91C5F9EFB00A53FB8 /* CardCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionController.h; sourceTree = "<group>"; };
 		23D9CDDA1C5F9EFB00A53FB8 /* CardCollectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionController.m; sourceTree = "<group>"; };
 		23D9CDE41C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewLineLayout.h; sourceTree = "<group>"; };
 		23D9CDE51C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewLineLayout.m; sourceTree = "<group>"; };
 		23D9CDE61C5FA3FF00A53FB8 /* CardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
 		23D9CDE71C5FA3FF00A53FB8 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
-		23D9CDFC1C5FADB700A53FB8 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
-		23D9CDFD1C5FADB700A53FB8 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		23D9CDFE1C5FADB700A53FB8 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
 		61B52BC7860FD062F7EBF88A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		61BD6CFB7951484362FE64D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA9444F48926A09625C6CD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -201,9 +201,9 @@
 				23344BE41C5F0DBA00724A4C /* AppDelegate.m */,
 				23344BE91C5F0DBA00724A4C /* Main.storyboard */,
 				23344C1B1C5F2A6000724A4C /* cellImage.png */,
-				23D9CDFC1C5FADB700A53FB8 /* 1.jpg */,
-				23D9CDFD1C5FADB700A53FB8 /* 2.jpg */,
-				23D9CDFE1C5FADB700A53FB8 /* 3.jpg */,
+				2340EB801C6042A1003E8A81 /* bg1.jpg */,
+				2340EB811C6042A1003E8A81 /* bg2.jpg */,
+				2340EB821C6042A1003E8A81 /* bg0.jpg */,
 				23344BEC1C5F0DBA00724A4C /* Assets.xcassets */,
 				23344BEE1C5F0DBA00724A4C /* LaunchScreen.storyboard */,
 				23344BF11C5F0DBA00724A4C /* Info.plist */,
@@ -417,14 +417,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				23344C2C1C5F3F6700724A4C /* HorizaontalViewCell.xib in Resources */,
+				2340EB841C6042A1003E8A81 /* bg2.jpg in Resources */,
 				231940771C5F546C00D3CECA /* func.list in Resources */,
 				23344C361C5F49F700724A4C /* 25.gif in Resources */,
 				23344C1F1C5F383F00724A4C /* 24.gif in Resources */,
-				23D9CE011C5FADB700A53FB8 /* 3.jpg in Resources */,
-				23D9CE001C5FADB700A53FB8 /* 2.jpg in Resources */,
+				2340EB851C6042A1003E8A81 /* bg0.jpg in Resources */,
 				231940751C5F540400D3CECA /* confuse.sh in Resources */,
 				23344BF01C5F0DBA00724A4C /* LaunchScreen.storyboard in Resources */,
-				23D9CDFF1C5FADB700A53FB8 /* 1.jpg in Resources */,
+				2340EB831C6042A1003E8A81 /* bg1.jpg in Resources */,
 				23344C241C5F3E6800724A4C /* HorizaontalScrollListCell.xib in Resources */,
 				23344C1C1C5F2A6000724A4C /* cellImage.png in Resources */,
 				23344BED1C5F0DBA00724A4C /* Assets.xcassets in Resources */,

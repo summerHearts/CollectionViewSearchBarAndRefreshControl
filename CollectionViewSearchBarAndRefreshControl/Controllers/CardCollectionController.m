@@ -39,7 +39,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UIImageView *)imageView {
     if (!_imageView) {
         _imageView = [[UIImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
-        _imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"%zi.jpg", 7%3]];
+        _imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"bg%zi.jpg", 7%3]];
         FXBlurView *blurView = [[FXBlurView alloc] initWithFrame:_imageView.bounds];
         blurView.blurRadius = 10;
         blurView.tintColor = [UIColor clearColor];
@@ -72,7 +72,7 @@ static NSString * const reuseIdentifier = @"Cell";
     CGFloat offsetX = scrollView.contentOffset.x;
     CGFloat width = self.lineLayout.itemSize.width + self.lineLayout.minimumLineSpacing;
     NSInteger item = offsetX/width;
-    NSString *imageName1 = [NSString stringWithFormat:@"%zi.jpg", item%3];
+    NSString *imageName1 = [NSString stringWithFormat:@"bg%zi.jpg", item%3];
     
     __weak typeof(self) weakSelf = self;
     [UIView animateWithDuration:.2f animations:^{
@@ -89,7 +89,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     CardCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    NSString *imageName = [NSString stringWithFormat:@"%zi.jpg", indexPath.item%3];
+    NSString *imageName = [NSString stringWithFormat:@"bg%zi.jpg", indexPath.item%3];
     cell.imageView.image = [UIImage imageNamed:imageName];
     
     return cell;
