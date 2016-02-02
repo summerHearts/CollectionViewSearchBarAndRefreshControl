@@ -6,19 +6,21 @@
 //  Copyright © 2016年 上海乐住信息技术有限公司. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "CollectionViewCell.h"
-#import "HorizaontalScrollListCell.h"
+
+#import "GCD.h"
+#import "Entity.h"
 #import "MJRefresh.h"
 #import "codeObfuscation.h"
-#import <MagicalRecord/MagicalRecord.h>
-#import "Entity.h"
-#import "GCD.h"
+#import "ViewController.h"
+#import "CollectionViewCell.h"
 #import "HorizaontalScrollView.h"
 #import "CardCollectionController.h"
+#import "HorizaontalScrollListCell.h"
+#import <MagicalRecord/MagicalRecord.h>
+
 static NSString * const CollectionViewCellIdentifier = @"CollectionViewCellIdentifier";
 
-static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScrollListCellIdentifier";
+static NSString * const HorizaontalScrollListCellIdentifier = @"HorizaontalScrollListCellIdentifier";
 @interface ViewController ()<UISearchBarDelegate>
 
 @property (nonatomic,strong) NSArray        *dataSource;
@@ -67,7 +69,6 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
     for (Entity *enty in ary3) {
         NSLog(@"%@ ,%@ ,%@",enty.name,enty.type,enty.tag);
     }
-   
 
     NSLog(@"---------------------------------------------------------------------");
     NSArray *ary = [Entity MR_findAll];
@@ -92,7 +93,7 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
 }
 
 - (void)nameAction{
-    NSLog(@"asfgagdfjklgl");
+    NSLog(@"资源混淆方案");
 }
 
 - (void)initSearchBar{
@@ -106,9 +107,7 @@ static NSString *const HorizaontalScrollListCellIdentifier = @"HorizaontalScroll
         [self.searchBar setBackgroundColor:[UIColor whiteColor]];
         UITextField *textField =  [UITextField appearanceWhenContainedInInstancesOfClasses:@[[UISearchBar class]]];
         [textField setTextColor:[UIColor orangeColor]];
-    
         [self.view addSubview:self.searchBar];
-    
 }
 
 

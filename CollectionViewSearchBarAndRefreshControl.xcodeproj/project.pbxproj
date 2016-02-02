@@ -189,10 +189,8 @@
 		23344BDF1C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControl */ = {
 			isa = PBXGroup;
 			children = (
+				2340EB861C604C38003E8A81 /* confuse */,
 				231940951C5F68BE00D3CECA /* Library */,
-				231940741C5F540400D3CECA /* confuse.sh */,
-				231940761C5F546C00D3CECA /* func.list */,
-				231940721C5F51F200D3CECA /* codeObfuscation.h */,
 				23344C1D1C5F372800724A4C /* ScreenShot */,
 				23344C131C5F0E7E00724A4C /* Controllers */,
 				23344C141C5F0E7E00724A4C /* Models */,
@@ -290,6 +288,16 @@
 				231940781C5F56E000D3CECA /* codeConfuse.png */,
 			);
 			path = ScreenShot;
+			sourceTree = "<group>";
+		};
+		2340EB861C604C38003E8A81 /* confuse */ = {
+			isa = PBXGroup;
+			children = (
+				231940741C5F540400D3CECA /* confuse.sh */,
+				231940761C5F546C00D3CECA /* func.list */,
+				231940721C5F51F200D3CECA /* codeObfuscation.h */,
+			);
+			name = confuse;
 			sourceTree = "<group>";
 		};
 		7B9B59906AE2F2C5DDEA3D3E /* Frameworks */ = {
