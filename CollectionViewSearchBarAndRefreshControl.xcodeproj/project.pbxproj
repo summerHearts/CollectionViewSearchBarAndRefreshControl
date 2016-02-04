@@ -13,10 +13,6 @@
 		2319407D1C5F5C2100D3CECA /* Entery.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2319407B1C5F5C2100D3CECA /* Entery.xcdatamodeld */; };
 		231940931C5F601900D3CECA /* Entity+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 231940901C5F601900D3CECA /* Entity+CoreDataProperties.m */; };
 		231940941C5F601900D3CECA /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = 231940921C5F601900D3CECA /* Entity.m */; };
-		2319409F1C5F68CB00D3CECA /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 231940981C5F68CB00D3CECA /* GCDGroup.m */; };
-		231940A01C5F68CB00D3CECA /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319409A1C5F68CB00D3CECA /* GCDQueue.m */; };
-		231940A11C5F68CB00D3CECA /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319409C1C5F68CB00D3CECA /* GCDSemaphore.m */; };
-		231940A21C5F68CB00D3CECA /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2319409E1C5F68CB00D3CECA /* GCDTimer.m */; };
 		23344BE21C5F0DBA00724A4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344BE11C5F0DBA00724A4C /* main.m */; };
 		23344BE51C5F0DBA00724A4C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344BE41C5F0DBA00724A4C /* AppDelegate.m */; };
 		23344BE81C5F0DBA00724A4C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23344BE71C5F0DBA00724A4C /* ViewController.m */; };
@@ -40,6 +36,11 @@
 		23D9CDDB1C5F9EFB00A53FB8 /* CardCollectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CDDA1C5F9EFB00A53FB8 /* CardCollectionController.m */; };
 		23D9CDE81C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CDE51C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m */; };
 		23D9CDE91C5FA3FF00A53FB8 /* CardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23D9CDE71C5FA3FF00A53FB8 /* CardCollectionViewCell.m */; };
+		23F4197C1C6322D6002A724D /* HttpRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F4197B1C6322D6002A724D /* HttpRequestManager.m */; };
+		23F4198F1C6326CE002A724D /* GCDGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F419881C6326CE002A724D /* GCDGroup.m */; };
+		23F419901C6326CE002A724D /* GCDQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F4198A1C6326CE002A724D /* GCDQueue.m */; };
+		23F419911C6326CE002A724D /* GCDSemaphore.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F4198C1C6326CE002A724D /* GCDSemaphore.m */; };
+		23F419921C6326CE002A724D /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 23F4198E1C6326CE002A724D /* GCDTimer.m */; };
 		29032775BE5D863BDAC5BB0F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA9444F48926A09625C6CD3B /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -70,15 +71,6 @@
 		231940901C5F601900D3CECA /* Entity+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Entity+CoreDataProperties.m"; sourceTree = "<group>"; };
 		231940911C5F601900D3CECA /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		231940921C5F601900D3CECA /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
-		231940961C5F68CB00D3CECA /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
-		231940971C5F68CB00D3CECA /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
-		231940981C5F68CB00D3CECA /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
-		231940991C5F68CB00D3CECA /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
-		2319409A1C5F68CB00D3CECA /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
-		2319409B1C5F68CB00D3CECA /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
-		2319409C1C5F68CB00D3CECA /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
-		2319409D1C5F68CB00D3CECA /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
-		2319409E1C5F68CB00D3CECA /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		23344BDD1C5F0DBA00724A4C /* CollectionViewSearchBarAndRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewSearchBarAndRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23344BE11C5F0DBA00724A4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23344BE31C5F0DBA00724A4C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +109,17 @@
 		23D9CDE51C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewLineLayout.m; sourceTree = "<group>"; };
 		23D9CDE61C5FA3FF00A53FB8 /* CardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardCollectionViewCell.h; sourceTree = "<group>"; };
 		23D9CDE71C5FA3FF00A53FB8 /* CardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardCollectionViewCell.m; sourceTree = "<group>"; };
+		23F4197A1C6322D6002A724D /* HttpRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestManager.h; sourceTree = "<group>"; };
+		23F4197B1C6322D6002A724D /* HttpRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestManager.m; sourceTree = "<group>"; };
+		23F419861C6326CE002A724D /* GCD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCD.h; sourceTree = "<group>"; };
+		23F419871C6326CE002A724D /* GCDGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDGroup.h; sourceTree = "<group>"; };
+		23F419881C6326CE002A724D /* GCDGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDGroup.m; sourceTree = "<group>"; };
+		23F419891C6326CE002A724D /* GCDQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDQueue.h; sourceTree = "<group>"; };
+		23F4198A1C6326CE002A724D /* GCDQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDQueue.m; sourceTree = "<group>"; };
+		23F4198B1C6326CE002A724D /* GCDSemaphore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDSemaphore.h; sourceTree = "<group>"; };
+		23F4198C1C6326CE002A724D /* GCDSemaphore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDSemaphore.m; sourceTree = "<group>"; };
+		23F4198D1C6326CE002A724D /* GCDTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		23F4198E1C6326CE002A724D /* GCDTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
 		61B52BC7860FD062F7EBF88A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		61BD6CFB7951484362FE64D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA9444F48926A09625C6CD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,15 +154,8 @@
 		231940951C5F68BE00D3CECA /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				231940961C5F68CB00D3CECA /* GCD.h */,
-				231940971C5F68CB00D3CECA /* GCDGroup.h */,
-				231940981C5F68CB00D3CECA /* GCDGroup.m */,
-				231940991C5F68CB00D3CECA /* GCDQueue.h */,
-				2319409A1C5F68CB00D3CECA /* GCDQueue.m */,
-				2319409B1C5F68CB00D3CECA /* GCDSemaphore.h */,
-				2319409C1C5F68CB00D3CECA /* GCDSemaphore.m */,
-				2319409D1C5F68CB00D3CECA /* GCDTimer.h */,
-				2319409E1C5F68CB00D3CECA /* GCDTimer.m */,
+				23F419851C6326C1002A724D /* GCD */,
+				23F419791C6322A0002A724D /* HttpRequestManager */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -298,6 +294,31 @@
 				231940721C5F51F200D3CECA /* codeObfuscation.h */,
 			);
 			name = confuse;
+			sourceTree = "<group>";
+		};
+		23F419791C6322A0002A724D /* HttpRequestManager */ = {
+			isa = PBXGroup;
+			children = (
+				23F4197A1C6322D6002A724D /* HttpRequestManager.h */,
+				23F4197B1C6322D6002A724D /* HttpRequestManager.m */,
+			);
+			path = HttpRequestManager;
+			sourceTree = "<group>";
+		};
+		23F419851C6326C1002A724D /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				23F419861C6326CE002A724D /* GCD.h */,
+				23F419871C6326CE002A724D /* GCDGroup.h */,
+				23F419881C6326CE002A724D /* GCDGroup.m */,
+				23F419891C6326CE002A724D /* GCDQueue.h */,
+				23F4198A1C6326CE002A724D /* GCDQueue.m */,
+				23F4198B1C6326CE002A724D /* GCDSemaphore.h */,
+				23F4198C1C6326CE002A724D /* GCDSemaphore.m */,
+				23F4198D1C6326CE002A724D /* GCDTimer.h */,
+				23F4198E1C6326CE002A724D /* GCDTimer.m */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		7B9B59906AE2F2C5DDEA3D3E /* Frameworks */ = {
@@ -523,22 +544,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23F419921C6326CE002A724D /* GCDTimer.m in Sources */,
 				231940931C5F601900D3CECA /* Entity+CoreDataProperties.m in Sources */,
-				231940A11C5F68CB00D3CECA /* GCDSemaphore.m in Sources */,
 				23344BE81C5F0DBA00724A4C /* ViewController.m in Sources */,
 				23344C271C5F3EF100724A4C /* HorizaontalScrollView.m in Sources */,
 				23D9CDE81C5FA3FF00A53FB8 /* CardCollectionViewLineLayout.m in Sources */,
-				231940A21C5F68CB00D3CECA /* GCDTimer.m in Sources */,
+				23F4198F1C6326CE002A724D /* GCDGroup.m in Sources */,
 				2319407D1C5F5C2100D3CECA /* Entery.xcdatamodeld in Sources */,
-				231940A01C5F68CB00D3CECA /* GCDQueue.m in Sources */,
 				23344BE51C5F0DBA00724A4C /* AppDelegate.m in Sources */,
 				23344C2B1C5F3F6700724A4C /* HorizaontalViewCell.m in Sources */,
+				23F419901C6326CE002A724D /* GCDQueue.m in Sources */,
 				23D9CDE91C5FA3FF00A53FB8 /* CardCollectionViewCell.m in Sources */,
+				23F4197C1C6322D6002A724D /* HttpRequestManager.m in Sources */,
 				23344C181C5F0ED100724A4C /* CollectionViewCell.m in Sources */,
-				2319409F1C5F68CB00D3CECA /* GCDGroup.m in Sources */,
 				23D9CDDB1C5F9EFB00A53FB8 /* CardCollectionController.m in Sources */,
 				23344BE21C5F0DBA00724A4C /* main.m in Sources */,
 				23344C231C5F3E6800724A4C /* HorizaontalScrollListCell.m in Sources */,
+				23F419911C6326CE002A724D /* GCDSemaphore.m in Sources */,
 				231940941C5F601900D3CECA /* Entity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
